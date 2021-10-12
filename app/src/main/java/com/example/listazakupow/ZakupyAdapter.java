@@ -60,7 +60,8 @@ public class ZakupyAdapter
     }
 
     public class ProduktViewHolder
-            extends RecyclerView.ViewHolder{
+            extends RecyclerView.ViewHolder
+            implements View.OnClickListener {
         //create constructor mathing super
         //generowanie widoku pojedynczego elementu listy
         private TextView productTextView;
@@ -70,6 +71,13 @@ public class ZakupyAdapter
             super(itemView);
             productTextView = itemView.findViewById(R.id.textView);
             this.zakupyAdapter = adapter;
+        }
+
+        @Override
+        public void onClick(View view) {
+            int indeksListy = getLayoutPosition();
+            String produkt = listaProduktow.get(indeksListy);
+
         }
     }
 }
