@@ -19,6 +19,7 @@ public class ZakupyAdapter
 
     public ZakupyAdapter(Context context,
                          ListaProduktow listaProduktowObiekt) {
+        inflater = LayoutInflater.from(context);
         this.listaProduktow =
                 listaProduktowObiekt.listaProduktow;
     }
