@@ -3,7 +3,7 @@ package com.example.listazakupow;
 import java.util.LinkedList;
 
 public class ListaProduktow {
-    public static LinkedList<String> listaProduktow = new LinkedList<>();
+    public LinkedList<String> listaProduktow = new LinkedList<>();
 
     public ListaProduktow() {
         listaProduktow.addLast("mleko");
